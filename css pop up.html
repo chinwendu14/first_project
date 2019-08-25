@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> css only lightbox/popup</title>
+    <link type="text/css" href="styles.css" rel="stylesheet"/*>
+    <link href="https://fonts.googleapis.com/css?family=mountain*of*chrismass" rel="stylesheet">
+    </head>
+    <style>
+        body{
+            background: #ddd;
+            margin: 0;
+            font-family: arial;
+            font-size: 1.2em;
+            color: #111;
+        }
+        .wrapper{
+            max-height: 960px;
+            margin: 10% auto;
+            text-align: center;
+            line-height: 2em;
+            
+        }
+        button{
+            border: 3pxsolid #111;
+            padding: 10px;
+            color: #111;
+            text-decoration: none;
+        }
+        .popup{
+            position:fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.6);
+            
+        }
+        .popup-content{
+            width: 400px;
+            height: 400px;
+            margin: 100px auto;
+            position: relative;
+            border: 5px solid #fff;
+        }
+        .close{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background:#222;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            color: #fff;
+            text-decoration: none;
+            line-height:0;
+            padding: 9px 0 11px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .popup:target{
+            display: none;
+        } 
+
+    </style>
+    <body>
+        <!--popup code-->
+        <div class="popup" id="xmas-popup">
+        <div class="popup-content">
+            <img src="image/Desert.jpg" id="image-popup" height="400px" width="400px" alt="xmas-sale"/>
+            <a href="#xmas-popup" class="close" onclick="document.getElementById('xmas-popup').style.display='none'">&times;</a>
+            </div>
+        </div>
+    <div class="wrapper">
+        <h1>css only popup</h1>
+        <p>i don understand this language so im just going to write it the way i understand it any way it is fun to see this done this way i wonder why but it is fun to see it that is so amazing and believable at the the sanme time come on us go ansd see how its works out for us all today</p>
+        <button type="button" class="button" onclick="document.getElementById('xmas-popup').style.display='block'">show popup</button>
+        </div>
+    </body>
+    </html>
