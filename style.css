@@ -1,7 +1,7 @@
 
 
 body{
-    background:aquamarine;
+    background:blanchedalmond;
     text-align: none;
 }
 
@@ -13,11 +13,20 @@ li{
     display: inline;
     font-size: 1em;
     margin-left: 5%;
+    text-transform: uppercase;
+
     
+    
+}
+li a{
+    text-decoration: none;
 }
 
 ul
 {
     margin: auto;
-
+    text-align: center;
+    color: black;
+    border: 12px solid pink;
+    background: pink;
 }
