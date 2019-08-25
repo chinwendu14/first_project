@@ -1,0 +1,23 @@
+
+
+body{
+    background:aquamarine;
+    text-align: none;
+}
+
+h1{
+    font-size: 4em;
+    text-align: center;
+}
+li{
+    display: inline;
+    font-size: 1em;
+    margin-left: 5%;
+    
+}
+
+ul
+{
+    margin: auto;
+
+}
